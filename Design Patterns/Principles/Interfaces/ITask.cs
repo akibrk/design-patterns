@@ -1,4 +1,4 @@
-﻿namespace Design_Patterns.Principles
+﻿namespace Design_Patterns.Principles.Interfaces
 {
     interface ITask:IEntity
     {

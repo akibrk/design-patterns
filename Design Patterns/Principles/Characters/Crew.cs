@@ -1,6 +1,7 @@
 ﻿using System;
+using Design_Patterns.Principles.Interfaces;
 
-namespace Design_Patterns.Principles
+namespace Design_Patterns.Principles.Characters
 {
     class Crew : ICrew
     {

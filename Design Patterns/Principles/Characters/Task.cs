@@ -1,4 +1,6 @@
-﻿namespace Design_Patterns.Principles
+﻿using Design_Patterns.Principles.Interfaces;
+
+namespace Design_Patterns.Principles.Characters
 {
     class Task : Entity, ITask
     {

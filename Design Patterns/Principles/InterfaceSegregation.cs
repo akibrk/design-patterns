@@ -10,7 +10,10 @@ namespace Design_Patterns.Principles
     }
 
     // Bad Interface
-    interface 
+    interface Test
+    { 
+    }
+
 
     // Good Interface
 }
