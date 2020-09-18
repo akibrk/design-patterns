@@ -8,8 +8,5 @@
 
         void Report();
         void Vote(IPlayer player);
-
-        new string ToString();
-        new string GetType();
     }
 }

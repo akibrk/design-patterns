@@ -7,7 +7,5 @@
 
         void DoTask(ITask task);
         void FixEquipment(IEquipment equipment);
-        string GetType();
-        string ToString();
     }
 }

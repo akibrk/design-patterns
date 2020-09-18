@@ -6,7 +6,5 @@
         string Name { get; set; }
         decimal PosX { get; set; }
         decimal PosY { get; set; }
-        string GetType();
-        string ToString();
     }
 }
