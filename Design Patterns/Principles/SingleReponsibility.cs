@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Design_Patterns.Principles.Characters;
 
 namespace Design_Patterns.Principles
 {

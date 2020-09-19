@@ -10,10 +10,23 @@ namespace Design_Patterns.Principles
     }
 
     // Bad Interface
-    interface Test
-    { 
+    interface IISBadEntity
+    {
+        string Id { get; }
+        string Name { get; set; }
+        decimal PosX { get; set; }
+        decimal PosY { get; set; }
+
+        bool Alive { get; set; }
+        void MoveX(decimal XValue);
+        void MoveY(decimal YValue);
+
+        void Report();
     }
 
 
     // Good Interface
+
+    // Look at the interfaces folder
+
 }

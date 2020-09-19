@@ -15,14 +15,14 @@ namespace Design_Patterns.Principles
 
     }
 
-    class Entity
+    class OCBadEntity
     {
         public string Name { get; set; }
         public string Bio {get; set;}
 
     }
 
-    class Sender : Entity 
+    class Sender : OCBadEntity
     {
         public Sender(string name, string bio)
         {
@@ -30,7 +30,7 @@ namespace Design_Patterns.Principles
             Bio = bio;
         }
     }
-    class Receiver : Entity
+    class Receiver : OCBadEntity
     {
         public Receiver(string name, string bio)
         {
@@ -41,8 +41,8 @@ namespace Design_Patterns.Principles
 
     class NotificationService
     {
-        private readonly Entity _user;
-        public NotificationService(Entity user)
+        private readonly OCBadEntity _user;
+        public NotificationService(OCBadEntity user)
         {
             _user = user;
         }
@@ -85,9 +85,9 @@ namespace Design_Patterns.Principles
         }
     }
 
-    class Player : OCEntity
+    class OCPlayer : OCEntity
     {
-        public Player(string name, string bio)
+        public OCPlayer(string name, string bio)
         {
             Name = name;
             Bio = bio;
