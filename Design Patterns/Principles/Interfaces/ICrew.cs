@@ -1,10 +1,7 @@
 ﻿namespace Design_Patterns.Principles.Interfaces
 {
-    interface ICrew
+    interface ICrew: IPlayer
     {
-        bool IsAlive { get; set; }
-        string Name { get; }
-
         void DoTask(ITask task);
         void FixEquipment(IEquipment equipment);
     }

@@ -3,13 +3,15 @@ using Design_Patterns.Principles.Interfaces;
 
 namespace Design_Patterns.Principles.Characters
 {
-    class Crew : ICrew
+    class Crew : ICrew 
     {
         private readonly IPlayer Player;
-        public string Name
-        {
-            get { return Player.Name; }
-        }
+        public string Name { get => Player.Name; set => Player.Name = value; }
+        public bool Alive { get => Player.Alive; set => Player.Alive = value; }
+        public string Id { get => Player.Id;}
+        public decimal PosX { get => Player.PosX; set => Player.PosX = value; }
+        public decimal PosY { get => Player.PosY; set => Player.PosY = value; }
+
 
         public bool IsAlive
         {
@@ -23,21 +25,13 @@ namespace Design_Patterns.Principles.Characters
             }
         }
 
+        
         public Crew(IPlayer player)
         {
             Player = player;
         }
 
-        public void DoTask(Task task)
-        {
-            if (!task.IsCompleted)
-            {
-                task.IsCompleted = true;
-                Console.WriteLine($"{Name} is doing {task.Name}");
-            }
-        }
-
-        public void FixEquipment(Equipment equipment)
+        public void FixEquipment(IEquipment equipment)
         {
             if (equipment.IsSubotaged)
             {
@@ -58,12 +52,31 @@ namespace Design_Patterns.Principles.Characters
 
         public void DoTask(ITask task)
         {
-            throw new NotImplementedException();
+            if (!task.IsCompleted)
+            {
+                task.IsCompleted = true;
+                Console.WriteLine($"{Name} is doing {task.Name}");
+            }
         }
 
-        public void FixEquipment(IEquipment equipment)
+        public void MoveX(decimal XValue)
         {
-            throw new NotImplementedException();
+            Player.MoveX(XValue);
+        }
+
+        public void MoveY(decimal YValue)
+        {
+            Player.MoveY(YValue);
+        }
+
+        public void Report()
+        {
+            Player.Report();
+        }
+
+        public void Vote(IPlayer player)
+        {
+            Player.Vote(player);
         }
     }
 }

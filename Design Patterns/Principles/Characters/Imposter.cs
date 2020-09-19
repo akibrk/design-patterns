@@ -6,6 +6,12 @@ namespace Design_Patterns.Principles.Characters
     class Imposter : IImposter
     {
         private readonly IPlayer Player;
+        public string Name { get => Player.Name; set => Player.Name = value; }
+        public bool Alive { get => Player.Alive; set => Player.Alive = value; }
+        public string Id { get => Player.Id; }
+        public decimal PosX { get => Player.PosX; set => Player.PosX = value; }
+        public decimal PosY { get => Player.PosY; set => Player.PosY = value; }
+
         public Imposter(IPlayer player)
         {
             Player = player;
@@ -21,7 +27,7 @@ namespace Design_Patterns.Principles.Characters
             }
             // Otherwise console log event
             Console.WriteLine($"{Player.Name} killed {crew.Name}");
-            crew.IsAlive = false;
+            crew.Alive = false;
         }
 
         // Sabotage an equipment
@@ -39,6 +45,26 @@ namespace Design_Patterns.Principles.Characters
         new public string ToString()
         {
             return Player.ToString();
+        }
+
+        public void MoveX(decimal XValue)
+        {
+            Player.MoveX(XValue);
+        }
+
+        public void MoveY(decimal YValue)
+        {
+            Player.MoveY(YValue);
+        }
+
+        public void Report()
+        {
+            Player.Report();
+        }
+
+        public void Vote(IPlayer player)
+        {
+            Player.Vote(player);
         }
     }
 }

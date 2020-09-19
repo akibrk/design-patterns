@@ -2,7 +2,7 @@
 {
     interface IEntity
     {
-        string Id { get; set; }
+        string Id { get; }
         string Name { get; set; }
         decimal PosX { get; set; }
         decimal PosY { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace Design_Patterns.Principles.Interfaces
 {
-    interface IEquipment
+    interface IEquipment:IEntity
     {
         bool IsSubotaged { get; set; }
     }
