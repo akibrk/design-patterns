@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Design_Patterns.Principles;
-
+using Design_Patterns.Principles.Characters;
 
 namespace Design_Patterns
 {
@@ -14,7 +14,7 @@ namespace Design_Patterns
         }
         static void Main(string[] args)
         {
-            
+            LiskovSubstitution.PrintEntityName(new Player("Akib"));
         }
     }
 
