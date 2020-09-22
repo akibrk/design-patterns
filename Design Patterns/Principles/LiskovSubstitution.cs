@@ -9,7 +9,7 @@ namespace Design_Patterns.Principles
     {
         // An instance of a class should be replaceable by an instance of its derived class 
 
-        // Basically We should be able to replace any Entity instance with any of the deried class members
+        // Basically we should be able to replace any Entity instance with any of the deried class members
 
         // For example
         // In Program.cs main()

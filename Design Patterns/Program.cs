@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Design_Patterns.Principles;
-using Design_Patterns.Principles.Characters;
+using Design_Patterns.Creational;
 
 namespace Design_Patterns
 {
@@ -14,7 +13,14 @@ namespace Design_Patterns
         }
         static void Main(string[] args)
         {
-            LiskovSubstitution.PrintEntityName(new Player("Akib"));
+            Singleton singleton = new Singleton();
+            var factory1 = singleton.GetElectronicsFactory();
+            var furnitureFac = singleton.GetFurnitureFactory();
+            Laptop myLaptop = factory1.MakeLaptop("Asus VivoBook S15", 400, "VivoBook S15", "Asus");
+
+
+            Println(myLaptop.ToString());
+            Println(furnitureFac.CreateChair("Master", 34).ToString());
         }
     }
 
