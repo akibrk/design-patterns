@@ -6,4 +6,9 @@
     <RootNamespace>Design_Patterns</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Behavioral\" />
+    <Folder Include="Structural\" />
+  </ItemGroup>
+
 </Project>

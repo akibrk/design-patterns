@@ -6,22 +6,29 @@ namespace Design_Patterns.Creational
 {
     class Singleton
     {
-        private readonly FurnitureFactory furnitureFactory;
-        private readonly ElectronicsFactory electronicsFactory;
-        public Singleton()
+        private static FurnitureFactory furnitureFactory;
+        private static ElectronicsFactory electronicsFactory;
+        protected Singleton()
         {
-            furnitureFactory = new FurnitureFactory();
-            electronicsFactory = new ElectronicsFactory();
+
         }
 
 
-        public FurnitureFactory GetFurnitureFactory()
+        public static FurnitureFactory GetFurnitureFactory()
         {
+            if(furnitureFactory == null)
+            {
+                furnitureFactory = new FurnitureFactory();
+            }
             return furnitureFactory;
         }
 
-        public ElectronicsFactory GetElectronicsFactory()
+        public static ElectronicsFactory GetElectronicsFactory()
         {
+            if(electronicsFactory == null)
+            {
+                electronicsFactory = new ElectronicsFactory();
+            }
             return electronicsFactory;
         }
 
