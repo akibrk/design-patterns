@@ -19,5 +19,10 @@ namespace Design_Patterns.Creational.Builder
                 Rating++;
         }
 
+        new public string ToString()
+        {
+            return $"Brand: {Name} ";
+        }
+
     }
 }

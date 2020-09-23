@@ -15,7 +15,7 @@ namespace Design_Patterns.Creational.Builder
 
         new public string ToString()
         {
-            var result = $"{Name} | Price: {Price} | {Brand.Name}";
+            var result = $"{Name} - Price: {Price} | {Brand.Name} - {Screen.ToString()} | {Battery.ToString()} | {Proccessor.ToString()}";
 
             return result;
         }

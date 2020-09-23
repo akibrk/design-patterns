@@ -14,5 +14,10 @@ namespace Design_Patterns.Creational.Builder
             BatterySize = size;
             BatteryType = type;
         }
+
+        new public string ToString()
+        {
+            return $"Battery: {BatterySize}Mh - {BatteryType} ";
+        }
     }
 }

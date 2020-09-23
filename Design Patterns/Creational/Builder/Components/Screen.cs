@@ -16,5 +16,10 @@
         {
             ScreenPanel = type;
         }
+
+        new public string ToString()
+        {
+            return $"Screen Size: {ScreenSize} - {ScreenPanel} ";
+        }
     }
 }
