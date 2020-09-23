@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Design_Patterns.Creational;
+using Design_Patterns.Creational.Builder;
 
 namespace Design_Patterns
 {
@@ -13,14 +13,12 @@ namespace Design_Patterns
         }
         static void Main(string[] args)
         {
-            Singleton singleton = new Singleton();
-            var factory1 = singleton.GetElectronicsFactory();
-            var furnitureFac = singleton.GetFurnitureFactory();
-            Laptop myLaptop = factory1.MakeLaptop("Asus VivoBook S15", 400, "VivoBook S15", "Asus");
+            LaptopBuilder builder = new LaptopBuilder();
+            LaptopManager manager = new LaptopManager(builder);
 
-
-            Println(myLaptop.ToString());
-            Println(furnitureFac.CreateChair("Master", 34).ToString());
+            manager.BuildProduct();
+            Laptop laptop = manager.GetProduct();
+            Println(laptop.ToString());
         }
     }
 
