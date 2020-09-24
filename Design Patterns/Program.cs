@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Design_Patterns.Creational;
+using Design_Patterns.Structural;
 
 namespace Design_Patterns
 {
@@ -13,15 +13,19 @@ namespace Design_Patterns
         }
         static void Main(string[] args)
         {
-            var factory1 = Singleton.GetElectronicsFactory();
-            var furnitureFac = Singleton.GetFurnitureFactory();
+            // I need to play audio in my advanced player
+
+            AdvancedVideoPlayer player = new Adaptar("Play4Me Media Player");
 
 
-            Laptop myLaptop = factory1.MakeLaptop("Asus VivoBook S15", 400, "VivoBook S15", "Asus");
-
-
-            Println(myLaptop.ToString());
-            Println(furnitureFac.CreateChair("Master", 34).ToString());
+            try
+            {
+                player.Play("themartians.mp3");
+            }
+            catch (NotSupportedException e)
+            {
+                Println($"Failed to play media - Error: {e.Message}");
+            }
         }
     }
 
