@@ -32,7 +32,24 @@ namespace Design_Patterns.Structural
                 
             }
         }
+        /**
+         * Main
+         * // I need to play audio in my advanced player
 
+            AdvancedVideoPlayer player = new Adaptar("Play4Me Media Player");
+
+
+            try
+            {
+                player.Play("themartians.mp3");
+            }
+            catch (NotSupportedException e)
+            {
+                Println($"Failed to play media - Error: {e.Message}");
+            }
+         * 
+         * 
+         */
 
     }
 

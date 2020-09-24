@@ -13,18 +13,26 @@ namespace Design_Patterns
         }
         static void Main(string[] args)
         {
-            // I need to play audio in my advanced player
-
-            AdvancedVideoPlayer player = new Adaptar("Play4Me Media Player");
-
-
-            try
+            Product laptop = new Product("Asus Vivobook")
             {
-                player.Play("themartians.mp3");
+                BrokenParts = true,
+                WaterDamaged = true
+            };
+
+            Facade AsusServiceCenter = new Facade();
+
+            if (AsusServiceCenter.CanReturnProduct(laptop))
+            {
+                laptop = AsusServiceCenter.FixProduct(laptop);
             }
-            catch (NotSupportedException e)
+
+            if (laptop.Repaired)
             {
-                Println($"Failed to play media - Error: {e.Message}");
+                Println("Laptop was repaired");
+            }
+            else
+            {
+                Println("Sorry, could not repair the laptop");
             }
         }
     }
