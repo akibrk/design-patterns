@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Design_Patterns.Structural;
+using Design_Patterns.Behavioral.Observer;
 
 namespace Design_Patterns
 {
@@ -13,27 +13,13 @@ namespace Design_Patterns
         }
         static void Main(string[] args)
         {
-            Product laptop = new Product("Asus Vivobook")
-            {
-                BrokenParts = true,
-                WaterDamaged = true
-            };
+            Stock stock = new Stock("Microsoft", 120);
+            stock.Attach(new Investor("Bill Gates"));
+            stock.Attach(new Investor("Someone"));
 
-            Facade AsusServiceCenter = new Facade();
-
-            if (AsusServiceCenter.CanReturnProduct(laptop))
-            {
-                laptop = AsusServiceCenter.FixProduct(laptop);
-            }
-
-            if (laptop.Repaired)
-            {
-                Println("Laptop was repaired");
-            }
-            else
-            {
-                Println("Sorry, could not repair the laptop");
-            }
+            stock.Price = 33.33;
+            Console.ReadKey();
+            stock.Price = 32.99;
         }
     }
 

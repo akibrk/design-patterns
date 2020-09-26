@@ -33,6 +33,31 @@ namespace Design_Patterns.Structural
             _store.FixReturnedProduct();
             return _store.ReturnFixedProduct();
         }
+        /*Main 
+         * 
+         * Product laptop = new Product("Asus Vivobook")
+            {
+                BrokenParts = true,
+                WaterDamaged = true
+            };
+
+            Facade AsusServiceCenter = new Facade();
+
+            if (AsusServiceCenter.CanReturnProduct(laptop))
+            {
+                laptop = AsusServiceCenter.FixProduct(laptop);
+            }
+
+            if (laptop.Repaired)
+            {
+                Println("Laptop was repaired");
+            }
+            else
+            {
+                Println("Sorry, could not repair the laptop");
+            }
+         
+         */
     }
 
     class Product
