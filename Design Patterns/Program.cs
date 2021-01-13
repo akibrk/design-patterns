@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Design_Patterns.Behavioral.Observer;
+using Design_Patterns.Behavioral.Iterator;
 
 namespace Design_Patterns
 {
@@ -13,13 +13,17 @@ namespace Design_Patterns
         }
         static void Main(string[] args)
         {
-            Stock stock = new Stock("Microsoft", 120);
-            stock.Attach(new Investor("Bill Gates"));
-            stock.Attach(new Investor("Someone"));
+            var list = new ConcreteAggregate();
+            list.PushBack(12);
+            list.PushBack(11);
 
-            stock.Price = 33.33;
-            Console.ReadKey();
-            stock.Price = 32.99;
+            var it = list.CreateIterator();
+            Println(it.Current());
+            Println(it.Next());
+            //Println(it.Next());
+
+
+            Println(it.IsDone());
         }
     }
 
