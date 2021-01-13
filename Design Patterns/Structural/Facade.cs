@@ -106,7 +106,5 @@ namespace Design_Patterns.Structural
             if (product.WaterDamaged) return false;
             return true ; 
         }
-
-
     }
 }

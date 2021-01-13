@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Design_Patterns.Behavioral.Iterator;
+using Design_Patterns.Behavioral.Facade;
 
 namespace Design_Patterns
 {
@@ -13,17 +13,10 @@ namespace Design_Patterns
         }
         static void Main(string[] args)
         {
-            var list = new ConcreteAggregate();
-            list.PushBack(12);
-            list.PushBack(11);
-
-            var it = list.CreateIterator();
-            Println(it.Current());
-            Println(it.Next());
-            //Println(it.Next());
+            var _manager = new AdmissionManager();
+            _manager.AdmitStudent("Akib", 10, 500);
 
 
-            Println(it.IsDone());
         }
     }
 

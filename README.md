@@ -13,6 +13,7 @@ There are 3 + 1 major categories of design patterns -
     - Builder
 2. Behavioral
    - Observer
+   - Iterator
 3. Structural
     - Adapter
     - Facade 
