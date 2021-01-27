@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-namespace Design_Patterns.Behavioral.Facade
+namespace Design_Patterns.Structural.Facade
 {
     /*
      *  Facade VS Repository

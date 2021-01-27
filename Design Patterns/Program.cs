@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Design_Patterns.Behavioral.Facade;
+using Design_Patterns.Behavioral.Observer;
 
 namespace Design_Patterns
 {
@@ -13,9 +13,8 @@ namespace Design_Patterns
         }
         static void Main(string[] args)
         {
-            var _manager = new AdmissionManager();
-            _manager.AdmitStudent("Akib", 10, 500);
-
+            // Run observer example
+            _ = new Observer();
 
         }
     }
