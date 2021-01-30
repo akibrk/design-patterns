@@ -11,7 +11,6 @@
     <Folder Include="Creational\Prototype\" />
     <Folder Include="Structural\Adapter\" />
     <Folder Include="Structural\Composite\" />
-    <Folder Include="Structural\Proxy\" />
   </ItemGroup>
 
 </Project>

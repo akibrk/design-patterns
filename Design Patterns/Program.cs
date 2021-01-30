@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Design_Patterns.Behavioral.Observer;
+using Design_Patterns.Structural.Proxy;
 
 namespace Design_Patterns
 {
@@ -14,7 +15,11 @@ namespace Design_Patterns
         static void Main(string[] args)
         {
             // Run observer example
-            _ = new Observer();
+            //_ = new Observer();
+
+            // Run Proxy example
+
+            _ = new Proxy();
 
         }
     }
