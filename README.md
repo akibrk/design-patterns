@@ -13,10 +13,13 @@ There are 3 + 1 major categories of design patterns -
     - Builder
 2. Behavioral
    - Command
-   - Observer
    - Iterator
+   - Observer
+   - Strategy
+   - Template Method
 3. Structural
     - Adapter
+    - Decorator
     - Facade 
 4. Concurrent
 
@@ -45,6 +48,23 @@ Therefore twice think before you code a feature.
 ## DRY
 #### Do not repeat yourself
 Well that's it.
+
+## Bounded Context (basis of Functional Partitioning)
+Bounded contexts are a central pattern in Domain-Driven Design. They provide a 
+way of tackling complexity in large applications or organizations by breaking it up 
+into separate conceptual modules. Each conceptual module then represents a context 
+that is separated from other contexts (hence, bounded), and can evolve independently. 
+Each bounded context should ideally be free to choose its own names for concepts within it, 
+and should have exclusive access to its own persistence store.
+
+At a minimum, individual web applications should strive to be their own bounded context, 
+with their own persistence store for their business model, rather than sharing a database 
+with other applications. Communication between bounded contexts occurs through 
+programmatic interfaces, rather than through a shared database, which allows for 
+business logic and events to take place in response to changes that take place. 
+Bounded contexts map closely to microservices, which also are ideally implemented as 
+their own individual bounded contexts.
+[Source](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles#bounded-contexts)
 
 ## SOLID
 
