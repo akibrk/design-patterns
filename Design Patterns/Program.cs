@@ -4,8 +4,9 @@ using System.Linq;
 using Design_Patterns.Behavioral.Observer;
 using Design_Patterns.Structural.Proxy;
 using Design_Patterns.Behavioral.Command;
-
 using Design_Patterns.Structural.Decorator;
+using Design_Patterns.Behavioral.Strategy;
+using Design_Patterns.Behavioral.TemplateMethod;
 
 namespace Design_Patterns
 {
@@ -26,9 +27,12 @@ namespace Design_Patterns
 
             //_ = new CommandPatternApp();
 
-            _ = new DecoratorPatternApp();
+            //_ = new DecoratorPatternApp();
 
 
+            //_ = new StrategyPatternApp();
+
+            _ = new TemplateMethodPatternApp();
 
         }
     }

@@ -9,6 +9,10 @@
   <ItemGroup>
     <Folder Include="Behavioral\Command\Interfaces\" />
     <Folder Include="Behavioral\Command\Commands\" />
+    <Folder Include="Behavioral\Memento\" />
+    <Folder Include="Behavioral\ChainOfResponsibility\" />
+    <Folder Include="Behavioral\Visitor\" />
+    <Folder Include="Behavioral\State\" />
     <Folder Include="Creational\Prototype\" />
     <Folder Include="Structural\Composite\" />
   </ItemGroup>
