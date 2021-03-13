@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Design_Patterns.Behavioral.Observer;
 using Design_Patterns.Structural.Proxy;
-
+using Design_Patterns.Behavioral.Command;
 namespace Design_Patterns
 {
     class Program
@@ -19,7 +19,10 @@ namespace Design_Patterns
 
             // Run Proxy example
 
-            _ = new Proxy();
+            /*_ = new Proxy();*/
+
+            _ = new CommandPatternApp();
+
 
         }
     }

@@ -12,6 +12,7 @@ There are 3 + 1 major categories of design patterns -
     - Factory Method
     - Builder
 2. Behavioral
+   - Command
    - Observer
    - Iterator
 3. Structural
