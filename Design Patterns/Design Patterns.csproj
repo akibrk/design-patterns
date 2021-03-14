@@ -14,7 +14,6 @@
     <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Behavioral\State\" />
     <Folder Include="Creational\Prototype\" />
-    <Folder Include="Structural\Composite\" />
   </ItemGroup>
 
 </Project>
