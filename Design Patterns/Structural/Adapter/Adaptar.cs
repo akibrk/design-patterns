@@ -4,6 +4,30 @@ using System.Text;
 
 namespace Design_Patterns.Structural
 {
+
+    /// <summary>
+    /// Driver Code for the pattern
+    /// </summary>
+    public class AdapterPatternApp
+    {
+        public AdapterPatternApp()
+        {
+            // I need to play audio in my advanced player
+
+            AdvancedVideoPlayer player = new Adaptar("Play4Me Media Player");
+
+
+            try
+            {
+                player.Play("themartians.mp3");
+            }
+            catch (NotSupportedException e)
+            {
+                Console.WriteLine($"Failed to play media - Error: {e.Message}");
+            }
+        }
+    }
+
     class Adaptar: AdvancedVideoPlayer
     {
         private readonly AudioPlayer _audioPlayer = new AudioPlayer("Adapted media player");
@@ -32,25 +56,7 @@ namespace Design_Patterns.Structural
                 
             }
         }
-        /**
-         * Main
-         * // I need to play audio in my advanced player
-
-            AdvancedVideoPlayer player = new Adaptar("Play4Me Media Player");
-
-
-            try
-            {
-                player.Play("themartians.mp3");
-            }
-            catch (NotSupportedException e)
-            {
-                Println($"Failed to play media - Error: {e.Message}");
-            }
-         * 
-         * 
-         */
-
+        
     }
 
     interface IMediaPlayer

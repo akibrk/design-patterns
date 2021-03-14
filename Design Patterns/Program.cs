@@ -4,6 +4,10 @@ using System.Linq;
 using Design_Patterns.Behavioral.Observer;
 using Design_Patterns.Structural.Proxy;
 using Design_Patterns.Behavioral.Command;
+using Design_Patterns.Structural.Decorator;
+using Design_Patterns.Behavioral.Strategy;
+using Design_Patterns.Behavioral.TemplateMethod;
+
 namespace Design_Patterns
 {
     class Program
@@ -21,8 +25,14 @@ namespace Design_Patterns
 
             /*_ = new Proxy();*/
 
-            _ = new CommandPatternApp();
+            //_ = new CommandPatternApp();
 
+            //_ = new DecoratorPatternApp();
+
+
+            //_ = new StrategyPatternApp();
+
+            _ = new TemplateMethodPatternApp();
 
         }
     }
