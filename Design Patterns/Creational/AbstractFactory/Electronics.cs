@@ -1,24 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Design_Patterns.Creational.AbstractFactory
 {
-    // Basically an Interface
-    class AbstractFactoryPatternApp
+    abstract class Electronics : Product
     {
-        public AbstractFactoryPatternApp()
+        new public string Category
         {
-
-        }
-    }
-
-    abstract class Furniture: Product
-    {
-        new public string Category { 
             get
             {
-                return "Furniture";
+                return "Electronics";
             }
             set
             {
@@ -26,10 +16,15 @@ namespace Design_Patterns.Creational.AbstractFactory
             }
         }
         public string SubCategory { get; set; }
-        
+        public string Brand { get; set; }
+        public string Specifications { get; set; }
+        public string Model { get; set; }
+
         new public string ToString()
         {
-            return $"{Name} | {SubCategory} | {Category}";
+            string result = $"{Name} | Model: {Model} | {Brand} | {SubCategory}";
+
+            return result;
         }
     }
 
