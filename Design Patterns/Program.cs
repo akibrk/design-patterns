@@ -7,6 +7,7 @@ using Design_Patterns.Behavioral.Command;
 using Design_Patterns.Structural.Decorator;
 using Design_Patterns.Behavioral.Strategy;
 using Design_Patterns.Behavioral.TemplateMethod;
+using Design_Patterns.Behavioral.ChainOfResponsibility;
 
 namespace Design_Patterns
 {
@@ -32,7 +33,9 @@ namespace Design_Patterns
 
             //_ = new StrategyPatternApp();
 
-            _ = new TemplateMethodPatternApp();
+            //_ = new TemplateMethodPatternApp();
+
+            _ = new ChainOfResponsibilityApp();
 
         }
     }
