@@ -4,11 +4,14 @@ using System.Text;
 
 namespace Design_Patterns.Creational
 {
-    class AbstractFactory
+    // Basically an Interface
+    class AbstractFactoryPatternApp
     {
-        // Basically an Interface
-    }
+        public AbstractFactoryPatternApp()
+        {
 
+        }
+    }
 
 
     // Example

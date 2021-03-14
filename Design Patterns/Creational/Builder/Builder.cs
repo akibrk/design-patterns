@@ -1,19 +1,18 @@
 ﻿using System.Collections.Generic;
-using System.Text;
+using System;
 
 namespace Design_Patterns.Creational.Builder
 {
-    class Builder
+    class BuilderPatternApp
     {
-        public Builder()
+        public BuilderPatternApp()
         {
-            ////From main
-            //LaptopBuilder builder = new LaptopBuilder();
-            //LaptopManager manager = new LaptopManager(builder);
+            LaptopBuilder builder = new LaptopBuilder();
+            LaptopManager manager = new LaptopManager(builder);
 
-            //manager.BuildProduct();
-            //Laptop laptop = manager.GetProduct();
-            //Println(laptop.ToString());
+            manager.BuildProduct();
+            Laptop laptop = manager.GetProduct();
+            Console.WriteLine(laptop.ToString());
         }
     }
 }
