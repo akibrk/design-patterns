@@ -4,12 +4,19 @@ using System.Text;
 
 namespace Design_Patterns.Creational
 {
-    class Factory
+    /// <summary>
+    /// No need to deal with instantiation 
+    /// </summary>
+    public class FactoryPatternApp
     {
-        // No need to deal with instantiation 
+        public FactoryPatternApp()
+        {
+            FurnitureFactory factory = new FurnitureFactory();
+            factory.CreateChair("My Chair", 400);
+            
+        }
     }
 
-    // From Abstract factory
     class FurnitureFactory
     {
         public Chair CreateChair(string chairName, decimal chairPrice)
