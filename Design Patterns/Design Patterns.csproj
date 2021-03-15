@@ -10,7 +10,6 @@
     <Folder Include="Behavioral\Command\Interfaces\" />
     <Folder Include="Behavioral\Command\Commands\" />
     <Folder Include="Behavioral\Memento\" />
-    <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Behavioral\State\" />
     <Folder Include="Creational\Prototype\" />
   </ItemGroup>
