@@ -8,6 +8,7 @@ using Design_Patterns.Structural.Decorator;
 using Design_Patterns.Behavioral.Strategy;
 using Design_Patterns.Behavioral.TemplateMethod;
 using Design_Patterns.Behavioral.ChainOfResponsibility;
+using Design_Patterns.Behavioral.Mediator;
 
 namespace Design_Patterns
 {
@@ -30,12 +31,13 @@ namespace Design_Patterns
 
             //_ = new DecoratorPatternApp();
 
-
             //_ = new StrategyPatternApp();
 
             //_ = new TemplateMethodPatternApp();
 
-            _ = new ChainOfResponsibilityApp();
+            //_ = new ChainOfResponsibilityApp();
+
+            _ = new MediatorPatternApp();
 
         }
     }

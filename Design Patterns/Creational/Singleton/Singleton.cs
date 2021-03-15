@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Design_Patterns.Creational;
-
+using Design_Patterns.Creational.Factory;
 
 namespace Design_Patterns.Creational
 {
