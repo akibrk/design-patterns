@@ -10,6 +10,8 @@ using Design_Patterns.Behavioral.TemplateMethod;
 using Design_Patterns.Behavioral.ChainOfResponsibility;
 using Design_Patterns.Behavioral.Mediator;
 using Design_Patterns.Behavioral.Visitor;
+using Design_Patterns.Creational.Prototype;
+
 namespace Design_Patterns
 {
     class Program
@@ -39,7 +41,9 @@ namespace Design_Patterns
 
             //_ = new MediatorPatternApp();
 
-            _ = new VisitorPatternApp();
+            //_ = new VisitorPatternApp();
+
+            _ = new PrototypePatternApp();
 
         }
     }

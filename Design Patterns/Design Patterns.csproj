@@ -11,7 +11,6 @@
     <Folder Include="Behavioral\Command\Commands\" />
     <Folder Include="Behavioral\Memento\" />
     <Folder Include="Behavioral\State\" />
-    <Folder Include="Creational\Prototype\" />
   </ItemGroup>
 
 </Project>
