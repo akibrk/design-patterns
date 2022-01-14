@@ -14,7 +14,7 @@ namespace Design_Patterns.Structural
         {
             // I need to play audio in my advanced player
 
-            AdvancedVideoPlayer player = new Adaptar("Play4Me Media Player");
+            AdvancedVideoPlayer player = new Adaptar("Play4Me22 Media Player");
 
 
             try
