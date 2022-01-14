@@ -19,7 +19,7 @@ namespace Design_Patterns.Structural
 
             try
             {
-                player.Play("themartians.mp3");
+                player.Play("littleblacksubmarines.mp3");
             }
             catch (NotSupportedException e)
             {
